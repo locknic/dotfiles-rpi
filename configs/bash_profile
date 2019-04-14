@@ -1,0 +1,8 @@
+alias ls="ls -G"
+alias ll="ls -lh"
+alias la="ls -a"
+alias rm="rm -rf"
+
+export EDITOR="vim"
+alias v=vim
+alias vi=vim

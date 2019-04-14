@@ -1,0 +1,53 @@
+" Use vim settings, rather than Vi settings
+set nocompatible
+
+" Read file when modified outside vim
+set autoread
+
+" Do not keep any backups
+set nobackup
+set nowb
+set noswapfile
+
+" Allow backspacing over everything in INSERT mode
+set backspace=indent,eol,start
+
+" Show ruler and command visual aid
+set ruler
+set showcmd
+
+" Set partial search and result highlighting
+set incsearch
+set hlsearch
+
+" Ignore case when searching
+set ignorecase
+set smartcase
+
+" Show matching braces
+set showmatch
+
+" Highlight the cursor line
+set cursorline
+
+" Use Monaco as default font
+set guifont=Monaco:h12
+
+" Set the colorscheme
+colorscheme desert
+syntax on
+
+" Set default vertical split to right
+set splitright
+
+" Set soft tabs
+set tabstop=4
+set shiftwidth=4
+
+" Indent
+set ai
+set si
+
+" Show line number and listchars
+set list
+set nu
