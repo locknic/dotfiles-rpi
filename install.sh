@@ -3,6 +3,8 @@ dir=$(pwd -P)
 
 # Set vimrc
 ln -sfv $dir/configs/vimrc ~/.vimrc
+mkdir -p ~/.config/nvim
+ln -sfv $dir/configs/vimrc ~/.config/nvim/init.vim
 
 # Set bash_profile
 cat $dir/configs/bash_profile > ~/.bash_profile

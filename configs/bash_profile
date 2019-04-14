@@ -4,5 +4,6 @@ alias la="ls -a"
 alias rm="rm -rf"
 
 export EDITOR="vim"
-alias v=vim
-alias vi=vim
+alias v=nvim
+alias vi=nvim
+alias vim=nvim
