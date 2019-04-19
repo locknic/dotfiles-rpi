@@ -1,53 +1,47 @@
-" Use vim settings, rather than Vi settings
-set nocompatible
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Base Configurations
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Read file when modified outside vim
-set autoread
+" General
+""""""""""""""""""""""""""""""""""""""""
+set mouse=a                     " Allow mouse clicking
+set ruler                       " Show the column number on status
+set number                      " Show line number on the side
+set cursorline                  " Show the current line
+set showmatch                   " Highlight matching parens/brackets
+set scrolloff=3                 " Keep cursor 3 lines away from screen border
 
-" Do not keep any backups
-set nobackup
-set nowb
-set noswapfile
+" Clipboad
+set clipboard^=unnamed,unnamedplus
 
-" Allow backspacing over everything in INSERT mode
-set backspace=indent,eol,start
+" Tabbing
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 
-" Show ruler and command visual aid
-set ruler
-set showcmd
-
-" Set partial search and result highlighting
-set incsearch
-set hlsearch
-
-" Ignore case when searching
+" Ignore case on search unless caps in query
 set ignorecase
 set smartcase
 
-" Show matching braces
-set showmatch
-
-" Highlight the cursor line
-set cursorline
-
-" Use Monaco as default font
-set guifont=Monaco:h12
-
-" Set the colorscheme
-colorscheme desert
-syntax on
-
-" Set default vertical split to right
+" Split panes to the right and bottom
+set splitbelow
 set splitright
 
-" Set soft tabs
-set tabstop=4
-set shiftwidth=4
+" Directories for swp files
+set nobackup
+set noswapfile
 
-" Indent
-set ai
-set si
+" Draw line at length 80
+highlight ColorColumn ctermbg=gray
+set colorcolumn=120
 
-" Show line number and listchars
+" Italicise comments
+highlight Comment cterm=italic
+
+" Highlight trailing whitespace characters
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 set list
-set nu
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$\|\t/
+
